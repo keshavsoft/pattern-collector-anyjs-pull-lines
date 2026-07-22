@@ -1,0 +1,36 @@
+{
+  "name": "pattern-collector-anyjs-pull-lines",
+  "version": "1.2.1",
+  "description": "story as json",
+  "keywords": [
+    "pattern",
+    "regex",
+    "parser",
+    "import",
+    "analyzer",
+    "esm",
+    "extractor"
+  ],
+  "dependencies": {
+    "pattern-collector-routesjs-import-extract": "^1.9.2",
+    "pattern-collector-routesjs-use-extract": "^1.5.4"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "bin/",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "homepage": "https://github.com/keshavsoft/pattern-collector-anyjs-pull-lines#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keshavsoft/pattern-collector-anyjs-pull-lines.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keshavsoft/pattern-collector-anyjs-pull-lines/issues"
+  }
+}
