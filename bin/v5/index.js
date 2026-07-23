@@ -9,7 +9,7 @@ const startFunc = ({ fileContent, importRegex, consumptionRegex,
 
     const importLines = extractLines({
         fileContent, parseRegex: importRegex.parseRegex,
-        searchRegex: importRegex.searchRegex,
+        searchRegex: importRegex.searchRegex || importRegex.searchString,
         showLog: showLogStep1
     });
 
@@ -17,7 +17,7 @@ const startFunc = ({ fileContent, importRegex, consumptionRegex,
 
     const useLines = extractLines({
         fileContent, parseRegex: consumptionRegex.parseRegex,
-        searchRegex: consumptionRegex.searchRegex,
+        searchRegex: consumptionRegex.searchRegex || consumptionRegex.searchString,
         showLog: showLogStep1
     });
 

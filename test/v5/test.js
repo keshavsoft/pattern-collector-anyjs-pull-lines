@@ -22,8 +22,8 @@ consumptionRegex.searchString = /^[ \t]*router\.use\b.*?;/gm;
 const k1 = defaultFunc({
     fileContent,
     importRegex, consumptionRegex,
-    showLog: true,
-    showLogStep1: true
+    showLog: false,
+    showLogStep1: false
 });
 
 console.log("ssssssssss : ", k1);

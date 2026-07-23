@@ -1,7 +1,7 @@
 {
   "name": "pattern-collector-anyjs-pull-lines",
-  "version": "1.4.1",
-  "description": "story as json",
+  "version": "1.5.1",
+  "description": "pull lines from content using supplied regex",
   "keywords": [
     "pattern",
     "regex",
