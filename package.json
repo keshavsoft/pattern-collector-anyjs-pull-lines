@@ -12,8 +12,7 @@
     "extractor"
   ],
   "dependencies": {
-    "pattern-collector-anyjs-extract": "^1.2.2",
-    "pattern-collector-routesjs-use-extract": "^1.5.4"
+    "pattern-collector-anyjs-extract": "^1.2.2"
   },
   "type": "module",
   "exports": {
