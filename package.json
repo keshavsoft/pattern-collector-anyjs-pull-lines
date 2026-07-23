@@ -1,7 +1,7 @@
 {
   "name": "pattern-collector-anyjs-pull-lines",
   "version": "1.5.3",
-  "description": "pull lines from content using supplied regex",
+  "description": "A powerful, configurable tool to scan JavaScript/ESM files and pull structured line matches using custom regular expressions.",
   "keywords": [
     "pattern",
     "regex",
