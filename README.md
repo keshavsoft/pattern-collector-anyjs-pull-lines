@@ -30,6 +30,12 @@ This library is particularly useful for building automated routing trees, genera
 
 ---
 
+## 🔗 Dependency Chain
+
+*   [`pattern-collector-anyjs-extract`](https://www.npmjs.com/package/pattern-collector-anyjs-extract) - listed in [`package.json`](package.json) as `^1.2.2`.
+
+---
+
 ## 🚀 Installation
 
 ```bash
