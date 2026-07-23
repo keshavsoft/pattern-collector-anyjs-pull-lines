@@ -1,0 +1,23 @@
+import fs from 'fs';
+import path from 'path';
+
+import defaultFunc from '../../../index.js';
+
+const filePath = path.join(process.cwd(), "routes.js");
+
+const fileContent = fs.readFileSync(filePath, 'utf8');
+
+const parseRegex = /import\s*\{[^}]*router\s+as\s+(\w+)[^}]*\}\s*from\s*['"]\.\/([^/]+)\/.*['"]/;
+
+const searchString = /^[ \t]*import\b.*from\s+['"]\.[^'"]*['"];/gm;
+
+const k1 = defaultFunc({
+    fileContent,
+    importParseRegex: parseRegex,
+    importSearchRegex: searchString,
+    showLog: false,
+    showLogStep1: false
+});
+
+console.log("ssssssssss : ", k1);
+
