@@ -5,6 +5,10 @@
 [![npm version](https://img.shields.io/npm/v/pattern-collector-anyjs-pull-lines.svg?style=flat-square&color=38bdf8)](https://www.npmjs.com/package/pattern-collector-anyjs-pull-lines)
 [![license](https://img.shields.io/npm/l/pattern-collector-anyjs-pull-lines.svg?style=flat-square&color=34d399)](LICENSE)
 
+🔗 **Quick Links:**
+*   📦 **NPM Registry**: [npmjs.com/package/pattern-collector-anyjs-pull-lines](https://www.npmjs.com/package/pattern-collector-anyjs-pull-lines)
+*   💻 **GitHub Repo**: [github.com/keshavsoft/pattern-collector-anyjs-pull-lines](https://github.com/keshavsoft/pattern-collector-anyjs-pull-lines)
+
 ---
 
 ## 📖 Overview

@@ -1,6 +1,6 @@
 {
   "name": "pattern-collector-anyjs-pull-lines",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "pull lines from content using supplied regex",
   "keywords": [
     "pattern",
