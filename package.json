@@ -13,7 +13,7 @@
   ],
   "dependencies": {
     "pattern-collector-anyjs-extract": "^1.4.6",
-    "pattern-collector-anyjs-pull-lines-import": "^1.8.2"
+    "pattern-collector-anyjs-pull-lines-import": "^1.9.1"
   },
   "type": "module",
   "exports": {

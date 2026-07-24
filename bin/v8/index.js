@@ -2,11 +2,14 @@ import getImportLines from "pattern-collector-anyjs-pull-lines-import";
 import extractLines from "pattern-collector-anyjs-extract";
 // import getUseLines from "pattern-collector-routesjs-use-extract";
 
+import packageJson from '../../package.json' with {type: 'json'};
+
 const startFunc = ({ fileContent, importRegex, consumptionRegex,
     showLog = false, showLogStep1 = false
 }) => {
 
-    if (showLog) console.log("imports : ", fileContent, importRegex, consumptionRegex);
+    if (showLog?.keysOnly) console.log(`${packageJson.name}-start`);
+    if (showLog?.withValues) console.log(`${packageJson.name}-inputs : `, fileContent, importRegex, consumptionRegex);
 
     const importLines = getImportLines({
         fileContent,
@@ -15,7 +18,7 @@ const startFunc = ({ fileContent, importRegex, consumptionRegex,
         showLog: showLogStep1
     });
 
-    if (showLog) console.log("importLines-7 : ", importLines);
+    if (showLog?.withValues) console.log(`${packageJson.name}-importLines-7 : `, importLines);
 
     const useLines = extractLines({
         fileContent, parseRegex: consumptionRegex.parseRegex,
@@ -27,8 +30,8 @@ const startFunc = ({ fileContent, importRegex, consumptionRegex,
     //     fileContent,
     //     showLog: showLogStep1
     // });
-
-    if (showLog) console.log("useLines-11 : ", useLines);
+    if (showLog?.keysOnly) console.log(`${packageJson.name}-end`);
+    if (showLog?.withValues) console.log(`${packageJson.name}-outputs : `, importLines, useLines);
 
     return {
         importLines,
