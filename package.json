@@ -1,6 +1,6 @@
 {
   "name": "pattern-collector-anyjs-pull-lines",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "A powerful, configurable tool to scan JavaScript/ESM files and pull structured line matches using custom regular expressions.",
   "keywords": [
     "pattern",
@@ -12,8 +12,9 @@
     "extractor"
   ],
   "dependencies": {
+    "pattern-collector-anyjs-extract": "^1.4.6",
     "pattern-collector-anyjs-pull-lines-consumption": "^1.2.1",
-    "pattern-collector-anyjs-pull-lines-import": "^1.9.1"
+    "pattern-collector-anyjs-pull-lines-import": "^1.9.3"
   },
   "type": "module",
   "exports": {
