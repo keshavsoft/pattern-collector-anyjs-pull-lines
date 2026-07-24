@@ -3,25 +3,16 @@ import path from 'path';
 
 import defaultFunc from '../../index.js';
 
+import extractRegex from './extractRegex.js';
+
 const filePath = path.join(process.cwd(), "routes.js");
 
 const fileContent = fs.readFileSync(filePath, 'utf8');
 
-const importRegex = {};
-
-importRegex.parseRegex = /import\s*\{[^}]*router\s+as\s+(\w+)[^}]*\}\s*from\s*['"]\.\/([^/]+)\/.*['"]/;
-
-importRegex.searchString = /^[ \t]*import\b.*from\s+['"]\.[^'"]*['"];/gm;
-
-const consumptionRegex = {};
-
-consumptionRegex.parseRegex = /router\.use\s*\(\s*['"`]\/?([^'"`]+)['"`]\s*,\s*(\w+)/;
-
-consumptionRegex.searchString = /^[ \t]*router\.use\b.*?;/gm;
-
 const k1 = defaultFunc({
     fileContent,
-    importRegex, consumptionRegex,
+    consumptionRegex: extractRegex.consumptionRegex,
+    importRegex: extractRegex.importRegex,
     showLog: false,
     showLogStep1: false
 });

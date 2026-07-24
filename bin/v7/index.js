@@ -1,3 +1,4 @@
+import getImportLines from "pattern-collector-anyjs-pull-lines-import";
 import extractLines from "pattern-collector-anyjs-extract";
 // import getUseLines from "pattern-collector-routesjs-use-extract";
 
@@ -7,9 +8,10 @@ const startFunc = ({ fileContent, importRegex, consumptionRegex,
 
     if (showLog) console.log("imports : ", fileContent, importRegex, consumptionRegex);
 
-    const importLines = extractLines({
-        fileContent, parseRegex: importRegex.parseRegex,
-        searchRegex: importRegex.searchRegex || importRegex.searchString,
+    const importLines = getImportLines({
+        fileContent,
+        parseRegex: importRegex.parseRegex,
+        searchRegex: importRegex.searchRegex || extractRegex.importRegex.searchString,
         showLog: showLogStep1
     });
 
